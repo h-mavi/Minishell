@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbiagi <mbiagi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mfanelli <mfanelli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 09:32:58 by mbiagi            #+#    #+#             */
-/*   Updated: 2024/12/03 09:43:42 by mbiagi           ###   ########.fr       */
+/*   Updated: 2026/09/17 15:38:39 by mfanelli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-/* 
-int	main()
-{
-	t_list	**lst = (t_list **)malloc(sizeof(t_list *) * 3);
-	t_list	*p1 = ft_lstnew("ciao");
-	t_list	*p2 = ft_lstnew("mondo");
-	t_list	*p3 = ft_lstnew("bastardo");
-	ft_lstadd_front(lst, p3);
-	ft_lstadd_front(lst, p2);
-	ft_lstadd_front(lst, p1);
-	printf("%d\n", ft_lstsize(*lst));
-} */

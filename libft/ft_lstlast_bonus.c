@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbiagi <mbiagi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mfanelli <mfanelli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 09:44:41 by mbiagi            #+#    #+#             */
-/*   Updated: 2024/12/05 09:04:20 by mbiagi           ###   ########.fr       */
+/*   Updated: 2026/09/17 15:38:35 by mfanelli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,3 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst -> next;
 	return (lst);
 }
-/* 
-int main()
-{
-	t_list	**lst = (t_list **)malloc(sizeof(t_list *) * 3);
-	t_list	*p1 = ft_lstnew("ciao");
-	t_list	*p2 = ft_lstnew("mondo");
-	t_list	*p3 = ft_lstnew("bastardo");
-	ft_lstadd_front(lst, p3);
-	ft_lstadd_front(lst, p2);
-	ft_lstadd_front(lst, p1);
-	printf("%s\n", (char *)(ft_lstlast(*lst))->content);
-} */
